@@ -16,10 +16,5 @@ Branching
 
 Der `gh-pages` branch ist der Live-Branch für die github-Page.
 
-Vorgehen:
-* master auschecken
-* code verändern
-* code auf master pushen
-* gh-pages auschecken
-* master in gh-pages mergen
+Der `master`branch wird nicht benötigt
 
