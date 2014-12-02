@@ -14,7 +14,7 @@ Gerne dürfen Modelle hinzugefügt werden. Damit Agile-Coaches die Modelle schne
 Branching
 =========
 
-Der `gh-pages` branch ist der Live-Branch für dei github-Page.
+Der `gh-pages` branch ist der Live-Branch für die github-Page.
 
 Vorgehen:
 * master auschecken
