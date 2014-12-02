@@ -9,17 +9,7 @@ Das Agile-Helferlein beitet diese Informationen kurz und knapp und liefert Quell
 Entwicklung
 ===========
 
-Gerne dürfen Modelle hinzugefügt werden. Damit Agile-Coaches die Modelle schnell auffinden können sollten Entwickler die oberste Ebene im Auge behalten und ggf. umstrukturieren.
-
-Branching
-=========
-
 Der `gh-pages` branch ist der Live-Branch für dei github-Page.
 
-Vorgehen:
-* master auschecken
-* code verändern
-* code auf master pushen
-* gh-pages auschecken
-* master in gh-pages mergen
+Der `master` branch wird nicht genutzt.
 
