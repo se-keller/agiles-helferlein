@@ -112,8 +112,10 @@
 								Integration</a></li>
 						<li><a href="#continuousdelivery" data-transition="slide">Continuous
 								Delivery</a></li>
+						<li><a href="#continuousdeployment" data-transition="slide">Continuous Deployment</a></li>
 						<li><a href="#firstprinciples" data-transition="slide">FIRST Prinzipien</a></li>
 						<li><a href="#solidprinciples" data-transition="slide">SOLID Prinzipien</a></li>
+						<li><a href="#microservices" data-transition="slide">Microservices</a></li>
 					</ul>
 				</div>
 				<div data-role="collapsible">
@@ -156,7 +158,7 @@
 
 	<div data-role="page" id="agilevalues">
 		<div data-role="content">
-			<h2>Agile Werte</h2>
+			<h2>Agile Werte (deutsch)</h2>
 			<p>Wir erschließen bessere Wege, Software zu entwickeln, indem
 				wir es selbst tun und anderen dabei helfen. Durch diese Tätigkeit
 				haben wir diese Werte zu schätzen gelernt:</p>
@@ -174,6 +176,24 @@
 			</p>
 			<p>Das heißt, obwohl wir die Werte auf der rechten Seite wichtig
 				finden, schätzen wir die Werte auf der linken Seite höher ein.</p>
+			<h2>Agile Values (englisch)</h2>
+			<p>We are uncovering better ways of developing
+software by doing it and helping others do it.
+Through this work we have come to value:</p>
+			<p>
+				<b>Individuals and interactions</b> over processes and tools
+			</p>
+			<p>
+				<b>Working software</b> over comprehensive documentation
+			</p>
+			<p>
+				<b>Customer collaboration</b> over contract negotiation
+			</p>
+			<p>
+				<b>Responding to change</b> over following a plan
+			</p>
+			<p>That is, while there is value in the items on
+the right, we value the items on the left more.</p>	
 			<p>
 				<a href="http://agilemanifesto.org/iso/de/" rel="external"
 					target="_blank">Quelle</a>
@@ -404,6 +424,9 @@
 			<p>
 				Im Gegensatz zu <b>Hauptkonkurrent</b> erfüllt <b>Produktname</b> <b>Differenznutzen</b>.
 			</p>
+			<h3>Beispiele</h3>
+			<p><i>"Bis zum Ende dieses Jahrzehnts soll diese Nation, also die USA, einen Menschen auf den Mond geschickt haben und ihn wieder auf die Erde zurück bringen."</i> - 1961, US-Präsident Kennedy, Mondlandung</p>
+			<p><i>"Der iPod ist ein digitales Musikabspielgerät, das bis zu 5000 Song speichern kann. Du wirst also in der Lage sein, Deine gesamte Musiksammlung in Deiner Hosentasche mit Dir zu tragen."</i> - Steve Jobs, iPod</p>
 		</div>
 	</div>
 
@@ -722,7 +745,41 @@
 			</p>
 		</div>
 	</div>
-
+	<div data-role="page" id="continuousdeployment">
+		<div data-role="content">
+			<h2>Continuous Deployment</h2>
+			<ul>
+				<li>Deploy ist immer möglich</li>
+				<li>Jeder erflogreich gestetete Commit wird ausgeliefert</li>
+				<li>Deploybar ist wichtiger als neue Features</li>
+				<li>Produktiv-Rollback auf jede beliebige Version</li>
+				<li>Watchdogs/Test auf Produktivumgebung</li>
+				<li>Enge Zusammenarbeit mit allen Beteiligten der Auslieferung (DevOps Kultur)</li>
+				<li>Alles automatisiert (Deployment Pipeline)</li>
+			</ul>			
+		</div>
+	</div>
+	<div data-role="page" id="microservices">
+		<div data-role="content">
+			<h2>Microservice Characteristics</h2>
+			<ul>
+				<li>Componentization via Services</li>
+				<li>Organized around Business Capabilities</li>
+				<li>Products not Projects</li>
+				<li>Smart endpoints and dumb pipes</li>
+				<li>Decentralized Governance</li>
+				<li>Decentralized Data Management</li>
+				<li>Infrastructure Automation</li>
+				<li>Design for failure</li>
+				<li>Evolutionary Design</li>
+			</ul>
+			<p>
+				<a
+					href="http://martinfowler.com/articles/microservices.html"
+					target="_blank">Quelle</a>
+			</p>		
+		</div>
+	</div>
 	<div data-role="page" id="authoritylevels">
 		<div data-role="content">
 			<h2>Authority Levels</h2>
