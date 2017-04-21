@@ -15,6 +15,8 @@
 <link rel="apple-touch-icon" href="images/itagileIcon.png" />
 <script src="libs/jquery/jquery-2.1.4.min.js"></script>
 <script src="libs/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+<script src="javascript/favorites/FavoritesRepository.js"></script>
+<script src="javascript/favorites/favorites.presenter.js"></script>
 <script src="javascript/nps-calculator/nps-calculator.js"></script>
 <script src="javascript/nps-calculator/nps-calculator.presenter.js"></script>
 <script src="javascript/velocity-likelihood/velocity-likelihood.js"></script>
@@ -46,13 +48,18 @@
 </head>
 <body onload="nps();">
 	<div data-role="header" data-position="fixed">
-		<a href="#" data-rel="back"
-			class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+		<a href="#home" 
+			class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="slide" data-direction="reverse">Back</a>
 		<h1>Agiles Helferlein</h1>
-		<a href="http://www.it-agile.de" rel="external" data-role="none">
+
+		<a href="#" id="button-favorite"
+			class="ui-btn ui-corner-all ui-shadow ui-icon-heart ui-btn-icon-right ui-btn-icon-notext" >Favorite</a>
+		
+		<!--<a href="http://www.it-agile.de" rel="external" data-role="none">
 			<img id="Logo" src="images/itagileLogo.png" alt="it-agile GmbH"
 			width="100%" />
-		</a>
+		</a>-->
+
 	</div>
 
 	<div data-role="page" id="home">
@@ -150,6 +157,33 @@
 					</ul>
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="favorites">
+		<div data-role="content">
+			<form>
+				<input data-type="search" id="search-favorites">
+			</form>
+			<div data-role="collapsibleset" data-filter="true"
+				data-children="> ul li" data-input="#search-favorites">
+				<ul id="list-favorites" data-role="listview" data-inset="true"></ul>
+			</div>
+			<a  id="button-favorites-delete" class="ui-btn ui-mini ui-btn-b ui-btn-icon-right ui-icon-delete" href="#favorites-delete" data-transition="none">Lösche einen Favoriten</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="favorites-delete">
+		<div data-role="content">
+			<form>
+				<input data-type="search" id="search-favorites-delete">
+			</form>
+			<div data-role="collapsibleset" data-filter="true"
+				data-children="> ul li" data-input="#search-favorites-delete">
+				<ul id="list-favorites-delete" data-role="listview" data-inset="true">		
+				</ul>
+			</div>
+			<a   class="ui-btn ui-mini ui-btn-icon-right ui-icon-heart" href="#favorites" data-transition="none" >Zurück zu deinen Favoriten</a>
 		</div>
 	</div>
 
